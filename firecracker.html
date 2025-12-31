@@ -1,25 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy New Year</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.firework{
+  position:absolute;
+  width:6px;
+  height:6px;
+  background:#fff;
+  border-radius:50%;
+  animation:explode 1.5s infinite;
+}
+@keyframes explode{
+  0%{transform:scale(0);opacity:1;}
+  100%{transform:scale(20);opacity:0;}
+}
+</style>
+</head>
 <body>
-<audio id="bgMusic" loop><source src="love.mp3"></audio>
-<div id="musicBtn">🔊</div>
+<div class="page">
+  <div class="card">
+    <h1>🎆 Happy New Year My Love 🎆</h1>
+  </div>
+</div>
 
-<canvas id="c"></canvas>
-<h1 id="finalText">🎆 Happy New Year My Love 🎆</h1>
-
-<script src="script.js"></script>
 <script>
-const c=document.getElementById("c"),x=c.getContext("2d");
-c.width=innerWidth;c.height=innerHeight;
-let p=[];
-setInterval(()=>{
- p.push({x:Math.random()*c.width,y:Math.random()*c.height,r:0});
- x.clearRect(0,0,c.width,c.height);
- p.forEach((a,i)=>{
-  x.beginPath();x.arc(a.x,a.y,a.r,0,6.28);
-  x.fillStyle="white";x.fill();a.r+=2;
-  if(a.r>25)p.splice(i,1);
- });
-},100);
+for(let i=0;i<25;i++){
+  let f=document.createElement("div");
+  f.className="firework";
+  f.style.left=Math.random()*100+"vw";
+  f.style.top=Math.random()*100+"vh";
+  f.style.animationDelay=Math.random()*2+"s";
+  document.body.appendChild(f);
+}
 </script>
 </body>
-
+</html>
 
