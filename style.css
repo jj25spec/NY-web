@@ -45,5 +45,20 @@ body{
   50%{box-shadow:0 0 35px #ffb3c1;}
   100%{box-shadow:0 0 15px #ff4d6d;}
 }
+.index-bg{
+  background:linear-gradient(135deg,#ff8fa3,#ffb3c6);
+}
+
+.index-card h1{
+  text-align:center;
+  font-size:2.8rem;
+}
+
+.index-photos img{
+  width:70px;
+  margin:8px;
+}
+
+
 
 
