@@ -1,89 +1,47 @@
 body{
- margin:0; font-family:'Pacifico',cursive;
- background:linear-gradient(135deg,#ff9a9e,#fad0c4);
- text-align:center; color:#fff; overflow:hidden;
-}
-#musicBtn{
- position:fixed;top:15px;right:15px;
- background:#ff4d6d;padding:12px;border-radius:50%;
- cursor:pointer;box-shadow:0 0 15px #ff4d6d;
-}
-.btn{
- background:linear-gradient(45deg,#ff4d6d,#ff8fa3);
- padding:12px 30px;border-radius:30px;
- text-decoration:none;color:#fff;
- box-shadow:0 0 15px #ff4d6d;
-}
-.memory{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin:20px;
-  animation:fadeIn 1.5s;
-}
-
-.memory img{
-  width:120px;
-  border-radius:15px;
-  margin-right:20px;
-  box-shadow:0 0 15px rgba(255,255,255,.6);
-}
-
-.memory p{
+  margin:0;
   font-family:'Poppins',sans-serif;
-  font-size:1.1rem;
-  max-width:300px;
+  overflow:hidden;
 }
 
-@keyframes fadeIn{
-  from{opacity:0;transform:translateY(20px);}
-  to{opacity:1;transform:translateY(0);}
-}
-.mem-bg{
-  background:linear-gradient(135deg,#ff758c,#ff7eb3);
+.page{
   min-height:100vh;
   display:flex;
   justify-content:center;
   align-items:center;
+  background:linear-gradient(135deg,#ff758c,#ff7eb3);
 }
 
-.intro-card{
+.card{
   background:rgba(255,255,255,0.15);
   padding:40px;
   border-radius:25px;
   backdrop-filter:blur(10px);
-  box-shadow:0 0 30px rgba(255,255,255,.4);
-  animation:fadeIn 2s;
-}
-
-.intro-card h1{
-  font-family:'Pacifico';
-  font-size:2.8rem;
-}
-
-.intro-photos img{
-  width:90px;
-  margin:10px;
-  border-radius:15px;
-  box-shadow:0 0 10px #fff;
+  box-shadow:0 0 40px rgba(255,255,255,.4);
+  text-align:center;
+  animation:fade 1.5s;
 }
 
 .glow-btn{
   display:inline-block;
-  margin-top:20px;
-  padding:14px 40px;
+  padding:14px 35px;
   border-radius:40px;
   background:linear-gradient(45deg,#ff4d6d,#ffd1dc);
   color:#fff;
-  font-size:1.1rem;
   text-decoration:none;
+  font-size:1.1rem;
+  margin-top:25px;
   box-shadow:0 0 20px #ff4d6d;
   animation:pulse 2s infinite;
 }
 
+@keyframes fade{
+  from{opacity:0;transform:scale(.8);}
+  to{opacity:1;transform:scale(1);}
+}
 @keyframes pulse{
   0%{box-shadow:0 0 15px #ff4d6d;}
-  50%{box-shadow:0 0 30px #ffb3c1;}
+  50%{box-shadow:0 0 35px #ffb3c1;}
   100%{box-shadow:0 0 15px #ff4d6d;}
 }
 
