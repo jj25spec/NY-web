@@ -1,0 +1,41 @@
+body{
+ margin:0; font-family:'Pacifico',cursive;
+ background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+ text-align:center; color:#fff; overflow:hidden;
+}
+#musicBtn{
+ position:fixed;top:15px;right:15px;
+ background:#ff4d6d;padding:12px;border-radius:50%;
+ cursor:pointer;box-shadow:0 0 15px #ff4d6d;
+}
+.btn{
+ background:linear-gradient(45deg,#ff4d6d,#ff8fa3);
+ padding:12px 30px;border-radius:30px;
+ text-decoration:none;color:#fff;
+ box-shadow:0 0 15px #ff4d6d;
+}
+.memory{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:20px;
+  animation:fadeIn 1.5s;
+}
+
+.memory img{
+  width:120px;
+  border-radius:15px;
+  margin-right:20px;
+  box-shadow:0 0 15px rgba(255,255,255,.6);
+}
+
+.memory p{
+  font-family:'Poppins',sans-serif;
+  font-size:1.1rem;
+  max-width:300px;
+}
+
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(20px);}
+  to{opacity:1;transform:translateY(0);}
+}
