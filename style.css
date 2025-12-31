@@ -4,7 +4,6 @@ body{
   overflow-y:auto;
 }
 
-
 .page{
   min-height:100vh;
   display:flex;
@@ -14,7 +13,7 @@ body{
 }
 
 .card{
-  background:rgba(255,255,255,0.15);
+  background:rgba(255,255,255,0.18);
   padding:40px;
   border-radius:25px;
   backdrop-filter:blur(10px);
@@ -23,30 +22,8 @@ body{
   animation:fade 1.5s;
 }
 
-.glow-btn{
-  display:inline-block;
-  padding:14px 35px;
-  border-radius:40px;
-  background:linear-gradient(45deg,#ff4d6d,#ffd1dc);
-  color:#fff;
-  text-decoration:none;
-  font-size:1.1rem;
-  margin-top:25px;
-  box-shadow:0 0 20px #ff4d6d;
-  animation:pulse 2s infinite;
-}
-
-@keyframes fade{
-  from{opacity:0;transform:scale(.8);}
-  to{opacity:1;transform:scale(1);}
-}
-@keyframes pulse{
-  0%{box-shadow:0 0 15px #ff4d6d;}
-  50%{box-shadow:0 0 35px #ffb3c1;}
-  100%{box-shadow:0 0 15px #ff4d6d;}
-}
 .index-bg{
-  background:linear-gradient(135deg,#ff8fa3,#ffb3c6);
+  background:linear-gradient(135deg,#ff5f9e,#ffc3d9);
 }
 
 .index-card h1{
@@ -57,8 +34,35 @@ body{
 .index-photos img{
   width:70px;
   margin:8px;
+  border-radius:12px;
+  box-shadow:0 0 10px #fff;
 }
 
+/* 💖 Pretty Elliptical Button */
+.glow-btn{
+  display:inline-block;
+  margin-top:25px;
+  padding:14px 45px;
+  border-radius:60px;
+  background:linear-gradient(45deg,#ff2f92,#ff9acb);
+  color:white;
+  text-decoration:none;
+  font-size:1.1rem;
+  box-shadow:0 0 25px rgba(255,100,180,.9);
+  animation:pulse 2s infinite;
+}
 
+/* 💕 Heart Collage Theme */
+.heart-bg{
+  background:linear-gradient(135deg,#ff4d88,#ffb6d5);
+}
 
-
+@keyframes fade{
+  from{opacity:0;transform:scale(.8);}
+  to{opacity:1;transform:scale(1);}
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 15px #ff2f92;}
+  50%{box-shadow:0 0 35px #ff9acb;}
+  100%{box-shadow:0 0 15px #ff2f92;}
+}
