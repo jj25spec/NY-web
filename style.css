@@ -1,8 +1,9 @@
 body{
   margin:0;
   font-family:'Poppins',sans-serif;
-  overflow:hidden;
+  overflow-y:auto;
 }
+
 
 .page{
   min-height:100vh;
@@ -44,4 +45,5 @@ body{
   50%{box-shadow:0 0 35px #ffb3c1;}
   100%{box-shadow:0 0 15px #ff4d6d;}
 }
+
 
