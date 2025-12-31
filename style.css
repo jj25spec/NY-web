@@ -32,7 +32,7 @@ body{
 }
 
 .index-photos img{
-  width:70px;
+  width:100px;
   margin:8px;
   border-radius:12px;
   box-shadow:0 0 10px #fff;
@@ -66,3 +66,4 @@ body{
   50%{box-shadow:0 0 35px #ff9acb;}
   100%{box-shadow:0 0 15px #ff2f92;}
 }
+
